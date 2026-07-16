@@ -1,0 +1,117 @@
+{
+  "accuracy": 0.7367,
+  "f1_macro": 0.7322,
+  "roc_auc": 0.8953,
+  "cv_mean": 0.7537,
+  "cv_std": 0.0215,
+  "n_train": 2400,
+  "n_test": 600,
+  "classes": [
+    "At-Risk",
+    "Fail",
+    "Pass"
+  ],
+  "features": [
+    "study_hours_per_day",
+    "sleep_hours",
+    "attendance_pct",
+    "prev_gpa",
+    "assignment_score",
+    "quiz_avg",
+    "lab_score",
+    "participation_score",
+    "stress_level",
+    "internet_hours",
+    "part_time_job",
+    "family_support",
+    "commute_hours",
+    "health_score",
+    "extracurricular",
+    "academic_index",
+    "wellness_index",
+    "support_index",
+    "risk_index",
+    "study_efficiency",
+    "sleep_quality_flag",
+    "low_attend_flag",
+    "high_stress_flag",
+    "gpa_risk_flag"
+  ],
+  "n_features": 24,
+  "feature_importances": {
+    "study_hours_per_day": 0.1971,
+    "sleep_hours": 0.0241,
+    "attendance_pct": 0.0556,
+    "prev_gpa": 0.1111,
+    "assignment_score": 0.0435,
+    "quiz_avg": 0.0311,
+    "lab_score": 0.0259,
+    "participation_score": 0.0285,
+    "stress_level": 0.0353,
+    "internet_hours": 0.0255,
+    "part_time_job": 0.0072,
+    "family_support": 0.0225,
+    "commute_hours": 0.0196,
+    "health_score": 0.0219,
+    "extracurricular": 0.0043,
+    "academic_index": 0.0749,
+    "wellness_index": 0.044,
+    "support_index": 0.0312,
+    "risk_index": 0.0652,
+    "study_efficiency": 0.1173,
+    "sleep_quality_flag": 0.0006,
+    "low_attend_flag": 0.0094,
+    "high_stress_flag": 0.0009,
+    "gpa_risk_flag": 0.0037
+  },
+  "confusion_matrix": [
+    [
+      155,
+      41,
+      18
+    ],
+    [
+      54,
+      205,
+      0
+    ],
+    [
+      44,
+      1,
+      82
+    ]
+  ],
+  "class_report": {
+    "At-Risk": {
+      "precision": 0.6126482213438735,
+      "recall": 0.7242990654205608,
+      "f1-score": 0.6638115631691649,
+      "support": 214.0
+    },
+    "Fail": {
+      "precision": 0.8299595141700404,
+      "recall": 0.7915057915057915,
+      "f1-score": 0.8102766798418972,
+      "support": 259.0
+    },
+    "Pass": {
+      "precision": 0.82,
+      "recall": 0.6456692913385826,
+      "f1-score": 0.7224669603524229,
+      "support": 127.0
+    },
+    "accuracy": 0.7366666666666667,
+    "macro avg": {
+      "precision": 0.7542025785046379,
+      "recall": 0.7204913827549783,
+      "f1-score": 0.7321850677878282,
+      "support": 600.0
+    },
+    "weighted avg": {
+      "precision": 0.7503437225627156,
+      "recall": 0.7366666666666667,
+      "f1-score": 0.7394510642700173,
+      "support": 600.0
+    }
+  }
+}
